@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirect Links</title>
+</head>
+<body>
+
+<h2>Welcome, {{ user_profile.user.username }}</h2>
+    <p>Bio: {{ user_profile.bio }}</p>
+    <p>Email: {{ user_profile.user.email }}</p>
+    <p>Phone Number: {{ user_profile.phone_number }}</p>
+    <p>Address: {{ user_profile.address }}</p>
+    <!-- Add more profile details here -->
+
+    <a href="{% url 'submit_service_request' %}">Submit Service Request</a>
+    <a href="{% url 'view_service_requests' %}">View My Service Requests</a>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Service Requests</title>
+</head>
+<body>
+    <h2>My Service Requests</h2>
+    <ul>
+        {% for request in service_requests %}
+            <li>{{ request.type }} - {{ request.details }} - Status: {{ request.status }}</li>
+            <!-- Add more details as needed -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
